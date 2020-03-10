@@ -1,0 +1,675 @@
+
+test.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000010  00800100  00000342  000003b6  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000342  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000003c6  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000003f8  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000020  00000000  00000000  00000434  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000a6e  00000000  00000000  00000454  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000828  00000000  00000000  00000ec2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000004c2  00000000  00000000  000016ea  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000034  00000000  00000000  00001bac  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000003f9  00000000  00000000  00001be0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000062c  00000000  00000000  00001fd9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000010  00000000  00000000  00002605  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	58 c0       	rjmp	.+176    	; 0xb6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	56 c0       	rjmp	.+172    	; 0xb6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	54 c0       	rjmp	.+168    	; 0xb6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	52 c0       	rjmp	.+164    	; 0xb6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	50 c0       	rjmp	.+160    	; 0xb6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	4e c0       	rjmp	.+156    	; 0xb6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	4c c0       	rjmp	.+152    	; 0xb6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	4a c0       	rjmp	.+148    	; 0xb6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	48 c0       	rjmp	.+144    	; 0xb6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	46 c0       	rjmp	.+140    	; 0xb6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	44 c0       	rjmp	.+136    	; 0xb6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	42 c0       	rjmp	.+132    	; 0xb6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	40 c0       	rjmp	.+128    	; 0xb6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	3e c0       	rjmp	.+124    	; 0xb6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	3c c0       	rjmp	.+120    	; 0xb6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	3a c0       	rjmp	.+116    	; 0xb6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	38 c0       	rjmp	.+112    	; 0xb6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	36 c0       	rjmp	.+108    	; 0xb6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	34 c0       	rjmp	.+104    	; 0xb6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	32 c0       	rjmp	.+100    	; 0xb6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	30 c0       	rjmp	.+96     	; 0xb6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	2e c0       	rjmp	.+92     	; 0xb6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	2c c0       	rjmp	.+88     	; 0xb6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	2a c0       	rjmp	.+84     	; 0xb6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	28 c0       	rjmp	.+80     	; 0xb6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	26 c0       	rjmp	.+76     	; 0xb6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	24 c0       	rjmp	.+72     	; 0xb6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	22 c0       	rjmp	.+68     	; 0xb6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	20 c0       	rjmp	.+64     	; 0xb6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	1e c0       	rjmp	.+60     	; 0xb6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	1c c0       	rjmp	.+56     	; 0xb6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	1a c0       	rjmp	.+52     	; 0xb6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	18 c0       	rjmp	.+48     	; 0xb6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	16 c0       	rjmp	.+44     	; 0xb6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e2 e4       	ldi	r30, 0x42	; 66
+  a0:	f3 e0       	ldi	r31, 0x03	; 3
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a0 31       	cpi	r26, 0x10	; 16
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+  b2:	02 d0       	rcall	.+4      	; 0xb8 <main>
+  b4:	44 c1       	rjmp	.+648    	; 0x33e <_exit>
+
+000000b6 <__bad_interrupt>:
+  b6:	a4 cf       	rjmp	.-184    	; 0x0 <__vectors>
+
+000000b8 <main>:
+                         0x80,0x90,0x88,0x83,0xc6,0xa1,0x86,0x8e};
+
+void buzzer(int hz, int count);
+
+int main(void)
+{
+  b8:	cf 93       	push	r28
+  ba:	df 93       	push	r29
+  bc:	00 d0       	rcall	.+0      	; 0xbe <main+0x6>
+  be:	cd b7       	in	r28, 0x3d	; 61
+  c0:	de b7       	in	r29, 0x3e	; 62
+	int n = 1;
+	int a;
+	
+	unsigned char var1;
+	DDRA = 0xff;        			// 포트 A 출력
+  c2:	8f ef       	ldi	r24, 0xFF	; 255
+  c4:	8a bb       	out	0x1a, r24	; 26
+	DDRB = 0xff;					// 포트 B 출력
+  c6:	87 bb       	out	0x17, r24	; 23
+	DDRE = 0x00;					// 포트 E의 PE4~PE7 입력 AC
+  c8:	12 b8       	out	0x02, r1	; 2
+	PORTE = 0xf0;					// 포트 E의 PE4~PE7 풀-업
+  ca:	80 ef       	ldi	r24, 0xF0	; 240
+  cc:	83 b9       	out	0x03, r24	; 3
+	PORTB = 0b11110111;  
+  ce:	87 ef       	ldi	r24, 0xF7	; 247
+  d0:	88 bb       	out	0x18, r24	; 24
+	PORTA = SEG[n];
+  d2:	80 91 01 01 	lds	r24, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+  d6:	8b bb       	out	0x1b, r24	; 27
+
+void buzzer(int hz, int count);
+
+int main(void)
+{
+	int n = 1;
+  d8:	81 e0       	ldi	r24, 0x01	; 1
+  da:	90 e0       	ldi	r25, 0x00	; 0
+					}
+						
+				}
+				n=a;
+				PORTA = SEG[n];
+				PORTB = 0b11111011; 
+  dc:	4b ef       	ldi	r20, 0xFB	; 251
+  de:	62 e0       	ldi	r22, 0x02	; 2
+  e0:	71 e0       	ldi	r23, 0x01	; 1
+  e2:	68 94       	set
+  e4:	55 24       	eor	r5, r5
+  e6:	51 f8       	bld	r5, 1
+  e8:	41 2c       	mov	r4, r1
+					}
+					
+				}
+				n=a;
+				PORTA = SEG[n];
+				PORTB = 0b11111101; 
+  ea:	3d ef       	ldi	r19, 0xFD	; 253
+  ec:	0f 2e       	mov	r0, r31
+  ee:	f3 e0       	ldi	r31, 0x03	; 3
+  f0:	7f 2e       	mov	r7, r31
+  f2:	f0 2d       	mov	r31, r0
+  f4:	61 2c       	mov	r6, r1
+  f6:	0f 2e       	mov	r0, r31
+  f8:	f4 e0       	ldi	r31, 0x04	; 4
+  fa:	ef 2e       	mov	r14, r31
+  fc:	f1 e0       	ldi	r31, 0x01	; 1
+  fe:	ff 2e       	mov	r15, r31
+ 100:	f0 2d       	mov	r31, r0
+ 102:	05 e0       	ldi	r16, 0x05	; 5
+ 104:	11 e0       	ldi	r17, 0x01	; 1
+ 106:	68 94       	set
+ 108:	22 24       	eor	r2, r2
+ 10a:	22 f8       	bld	r2, 2
+ 10c:	31 2c       	mov	r3, r1
+						a = n;
+					}
+								
+				}
+				n=a;
+				PORTA = SEG[n];
+ 10e:	0f 2e       	mov	r0, r31
+ 110:	f0 e0       	ldi	r31, 0x00	; 0
+ 112:	af 2e       	mov	r10, r31
+ 114:	f1 e0       	ldi	r31, 0x01	; 1
+ 116:	bf 2e       	mov	r11, r31
+ 118:	f0 2d       	mov	r31, r0
+				PORTA = SEG[1];
+				PORTB = 0b11110111; 
+ 11a:	27 ef       	ldi	r18, 0xF7	; 247
+ 11c:	a1 e0       	ldi	r26, 0x01	; 1
+ 11e:	b1 e0       	ldi	r27, 0x01	; 1
+ 120:	99 24       	eor	r9, r9
+ 122:	93 94       	inc	r9
+ 124:	81 2c       	mov	r8, r1
+				break; 	//	FND S3 표시
+			default : break;
+		}
+		_delay_ms(1000);
+		if(n >= 16) n = 0;
+ 126:	c1 2c       	mov	r12, r1
+ 128:	d1 2c       	mov	r13, r1
+	PORTE = 0xf0;					// 포트 E의 PE4~PE7 풀-업
+	PORTB = 0b11110111;  
+	PORTA = SEG[n];
+	
+	while(1) {
+		var1 = PINE & 0xf0; 		// 포트 E 하위 4비트 마스크
+ 12a:	e1 b1       	in	r30, 0x01	; 1
+		switch(var1) {
+ 12c:	e0 7f       	andi	r30, 0xF0	; 240
+ 12e:	e0 3b       	cpi	r30, 0xB0	; 176
+ 130:	09 f4       	brne	.+2      	; 0x134 <main+0x7c>
+ 132:	70 c0       	rjmp	.+224    	; 0x214 <main+0x15c>
+ 134:	20 f4       	brcc	.+8      	; 0x13e <main+0x86>
+ 136:	e0 37       	cpi	r30, 0x70	; 112
+ 138:	09 f4       	brne	.+2      	; 0x13c <main+0x84>
+ 13a:	ae c0       	rjmp	.+348    	; 0x298 <main+0x1e0>
+ 13c:	f0 c0       	rjmp	.+480    	; 0x31e <main+0x266>
+ 13e:	e0 3d       	cpi	r30, 0xD0	; 208
+ 140:	31 f1       	breq	.+76     	; 0x18e <main+0xd6>
+ 142:	e0 3e       	cpi	r30, 0xE0	; 224
+ 144:	09 f0       	breq	.+2      	; 0x148 <main+0x90>
+ 146:	eb c0       	rjmp	.+470    	; 0x31e <main+0x266>
+			case 0b11100000 : 				// X4를 누르면
+				if(n<4){
+ 148:	84 30       	cpi	r24, 0x04	; 4
+ 14a:	91 05       	cpc	r25, r1
+ 14c:	ac f4       	brge	.+42     	; 0x178 <main+0xc0>
+ 14e:	fc 01       	movw	r30, r24
+ 150:	e0 50       	subi	r30, 0x00	; 0
+ 152:	ff 4f       	sbci	r31, 0xFF	; 255
+					for(n;n<=4;n++){
+						PORTA = SEG[n];
+ 154:	81 91       	ld	r24, Z+
+ 156:	8b bb       	out	0x1b, r24	; 27
+						PORTB = 0b11111110;
+ 158:	5e ef       	ldi	r21, 0xFE	; 254
+ 15a:	58 bb       	out	0x18, r21	; 24
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 15c:	8f e3       	ldi	r24, 0x3F	; 63
+ 15e:	92 e4       	ldi	r25, 0x42	; 66
+ 160:	5f e0       	ldi	r21, 0x0F	; 15
+ 162:	81 50       	subi	r24, 0x01	; 1
+ 164:	90 40       	sbci	r25, 0x00	; 0
+ 166:	50 40       	sbci	r21, 0x00	; 0
+ 168:	e1 f7       	brne	.-8      	; 0x162 <main+0xaa>
+ 16a:	00 c0       	rjmp	.+0      	; 0x16c <main+0xb4>
+ 16c:	00 00       	nop
+	while(1) {
+		var1 = PINE & 0xf0; 		// 포트 E 하위 4비트 마스크
+		switch(var1) {
+			case 0b11100000 : 				// X4를 누르면
+				if(n<4){
+					for(n;n<=4;n++){
+ 16e:	0e 17       	cp	r16, r30
+ 170:	1f 07       	cpc	r17, r31
+ 172:	81 f7       	brne	.-32     	; 0x154 <main+0x9c>
+ 174:	29 82       	std	Y+1, r2	; 0x01
+ 176:	3a 82       	std	Y+2, r3	; 0x02
+						_delay_ms(5000);
+						a = n;
+						}
+					}
+				n=a;
+				PORTA = SEG[n];
+ 178:	e9 81       	ldd	r30, Y+1	; 0x01
+ 17a:	fa 81       	ldd	r31, Y+2	; 0x02
+ 17c:	e0 50       	subi	r30, 0x00	; 0
+ 17e:	ff 4f       	sbci	r31, 0xFF	; 255
+ 180:	80 81       	ld	r24, Z
+ 182:	8b bb       	out	0x1b, r24	; 27
+				PORTB = 0b11111110; 
+ 184:	8e ef       	ldi	r24, 0xFE	; 254
+ 186:	88 bb       	out	0x18, r24	; 24
+						PORTB = 0b11111110;
+						_delay_ms(5000);
+						a = n;
+						}
+					}
+				n=a;
+ 188:	89 81       	ldd	r24, Y+1	; 0x01
+ 18a:	9a 81       	ldd	r25, Y+2	; 0x02
+				PORTA = SEG[n];
+				PORTB = 0b11111110; 
+				break; 	//	FND S0 표시 
+ 18c:	c8 c0       	rjmp	.+400    	; 0x31e <main+0x266>
+			case 0b11010000 : 				// X5를 누르면
+				if(n<3){
+ 18e:	83 30       	cpi	r24, 0x03	; 3
+ 190:	91 05       	cpc	r25, r1
+ 192:	c4 f4       	brge	.+48     	; 0x1c4 <main+0x10c>
+					for(n;n<=3;n++){
+ 194:	84 30       	cpi	r24, 0x04	; 4
+ 196:	91 05       	cpc	r25, r1
+ 198:	7c f5       	brge	.+94     	; 0x1f8 <main+0x140>
+ 19a:	fc 01       	movw	r30, r24
+ 19c:	e0 50       	subi	r30, 0x00	; 0
+ 19e:	ff 4f       	sbci	r31, 0xFF	; 255
+						PORTA = SEG[n];
+ 1a0:	81 91       	ld	r24, Z+
+ 1a2:	8b bb       	out	0x1b, r24	; 27
+						PORTB = 0b11111101;
+ 1a4:	38 bb       	out	0x18, r19	; 24
+ 1a6:	9f e3       	ldi	r25, 0x3F	; 63
+ 1a8:	52 e4       	ldi	r21, 0x42	; 66
+ 1aa:	8f e0       	ldi	r24, 0x0F	; 15
+ 1ac:	91 50       	subi	r25, 0x01	; 1
+ 1ae:	50 40       	sbci	r21, 0x00	; 0
+ 1b0:	80 40       	sbci	r24, 0x00	; 0
+ 1b2:	e1 f7       	brne	.-8      	; 0x1ac <main+0xf4>
+ 1b4:	00 c0       	rjmp	.+0      	; 0x1b6 <main+0xfe>
+ 1b6:	00 00       	nop
+				PORTA = SEG[n];
+				PORTB = 0b11111110; 
+				break; 	//	FND S0 표시 
+			case 0b11010000 : 				// X5를 누르면
+				if(n<3){
+					for(n;n<=3;n++){
+ 1b8:	ee 15       	cp	r30, r14
+ 1ba:	ff 05       	cpc	r31, r15
+ 1bc:	89 f7       	brne	.-30     	; 0x1a0 <main+0xe8>
+ 1be:	87 2d       	mov	r24, r7
+ 1c0:	96 2d       	mov	r25, r6
+ 1c2:	1f c0       	rjmp	.+62     	; 0x202 <main+0x14a>
+						PORTA = SEG[n];
+						PORTB = 0b11111101;
+						_delay_ms(5000);
+						a = n;
+					}
+				}else if(n>3)
+ 1c4:	84 30       	cpi	r24, 0x04	; 4
+ 1c6:	91 05       	cpc	r25, r1
+ 1c8:	d4 f0       	brlt	.+52     	; 0x1fe <main+0x146>
+ 1ca:	fc 01       	movw	r30, r24
+ 1cc:	ef 5f       	subi	r30, 0xFF	; 255
+ 1ce:	fe 4f       	sbci	r31, 0xFE	; 254
+				{
+					for(n; n>=3;n--){
+							PORTA = SEG[n];
+ 1d0:	82 91       	ld	r24, -Z
+ 1d2:	8b bb       	out	0x1b, r24	; 27
+							PORTB = 0b11111101;
+ 1d4:	38 bb       	out	0x18, r19	; 24
+ 1d6:	9f e3       	ldi	r25, 0x3F	; 63
+ 1d8:	52 e4       	ldi	r21, 0x42	; 66
+ 1da:	8f e0       	ldi	r24, 0x0F	; 15
+ 1dc:	91 50       	subi	r25, 0x01	; 1
+ 1de:	50 40       	sbci	r21, 0x00	; 0
+ 1e0:	80 40       	sbci	r24, 0x00	; 0
+ 1e2:	e1 f7       	brne	.-8      	; 0x1dc <main+0x124>
+ 1e4:	00 c0       	rjmp	.+0      	; 0x1e6 <main+0x12e>
+ 1e6:	00 00       	nop
+						_delay_ms(5000);
+						a = n;
+					}
+				}else if(n>3)
+				{
+					for(n; n>=3;n--){
+ 1e8:	83 e0       	ldi	r24, 0x03	; 3
+ 1ea:	91 e0       	ldi	r25, 0x01	; 1
+ 1ec:	8e 17       	cp	r24, r30
+ 1ee:	9f 07       	cpc	r25, r31
+ 1f0:	79 f7       	brne	.-34     	; 0x1d0 <main+0x118>
+ 1f2:	87 2d       	mov	r24, r7
+ 1f4:	96 2d       	mov	r25, r6
+ 1f6:	05 c0       	rjmp	.+10     	; 0x202 <main+0x14a>
+				PORTA = SEG[n];
+				PORTB = 0b11111110; 
+				break; 	//	FND S0 표시 
+			case 0b11010000 : 				// X5를 누르면
+				if(n<3){
+					for(n;n<=3;n++){
+ 1f8:	89 81       	ldd	r24, Y+1	; 0x01
+ 1fa:	9a 81       	ldd	r25, Y+2	; 0x02
+ 1fc:	02 c0       	rjmp	.+4      	; 0x202 <main+0x14a>
+ 1fe:	89 81       	ldd	r24, Y+1	; 0x01
+ 200:	9a 81       	ldd	r25, Y+2	; 0x02
+							a = n;
+					}
+					
+				}
+				n=a;
+				PORTA = SEG[n];
+ 202:	fc 01       	movw	r30, r24
+ 204:	e0 50       	subi	r30, 0x00	; 0
+ 206:	ff 4f       	sbci	r31, 0xFF	; 255
+ 208:	e0 81       	ld	r30, Z
+ 20a:	eb bb       	out	0x1b, r30	; 27
+				PORTB = 0b11111101; 
+ 20c:	38 bb       	out	0x18, r19	; 24
+				break; 	//	FND S1 표시
+ 20e:	9a 83       	std	Y+2, r25	; 0x02
+ 210:	89 83       	std	Y+1, r24	; 0x01
+ 212:	85 c0       	rjmp	.+266    	; 0x31e <main+0x266>
+			case 0b10110000 : 				// X6를 누르면
+			
+				if(n<2){
+ 214:	82 30       	cpi	r24, 0x02	; 2
+ 216:	91 05       	cpc	r25, r1
+ 218:	cc f4       	brge	.+50     	; 0x24c <main+0x194>
+					for(n;n<=2;n++){
+ 21a:	83 30       	cpi	r24, 0x03	; 3
+ 21c:	91 05       	cpc	r25, r1
+ 21e:	74 f5       	brge	.+92     	; 0x27c <main+0x1c4>
+ 220:	fc 01       	movw	r30, r24
+ 222:	e0 50       	subi	r30, 0x00	; 0
+ 224:	ff 4f       	sbci	r31, 0xFF	; 255
+						PORTA = SEG[n];
+ 226:	81 91       	ld	r24, Z+
+ 228:	8b bb       	out	0x1b, r24	; 27
+						PORTB = 0b11111011;
+ 22a:	48 bb       	out	0x18, r20	; 24
+ 22c:	9f e3       	ldi	r25, 0x3F	; 63
+ 22e:	52 e4       	ldi	r21, 0x42	; 66
+ 230:	8f e0       	ldi	r24, 0x0F	; 15
+ 232:	91 50       	subi	r25, 0x01	; 1
+ 234:	50 40       	sbci	r21, 0x00	; 0
+ 236:	80 40       	sbci	r24, 0x00	; 0
+ 238:	e1 f7       	brne	.-8      	; 0x232 <main+0x17a>
+ 23a:	00 c0       	rjmp	.+0      	; 0x23c <main+0x184>
+ 23c:	00 00       	nop
+				PORTB = 0b11111101; 
+				break; 	//	FND S1 표시
+			case 0b10110000 : 				// X6를 누르면
+			
+				if(n<2){
+					for(n;n<=2;n++){
+ 23e:	91 e0       	ldi	r25, 0x01	; 1
+ 240:	e3 30       	cpi	r30, 0x03	; 3
+ 242:	f9 07       	cpc	r31, r25
+ 244:	81 f7       	brne	.-32     	; 0x226 <main+0x16e>
+ 246:	85 2d       	mov	r24, r5
+ 248:	94 2d       	mov	r25, r4
+ 24a:	1d c0       	rjmp	.+58     	; 0x286 <main+0x1ce>
+						PORTA = SEG[n];
+						PORTB = 0b11111011;
+						_delay_ms(5000);
+						a = n;
+					}
+				}else if(n>2){
+ 24c:	83 30       	cpi	r24, 0x03	; 3
+ 24e:	91 05       	cpc	r25, r1
+ 250:	c4 f0       	brlt	.+48     	; 0x282 <main+0x1ca>
+ 252:	fc 01       	movw	r30, r24
+ 254:	ef 5f       	subi	r30, 0xFF	; 255
+ 256:	fe 4f       	sbci	r31, 0xFE	; 254
+						for(n; n>=2;n--){
+							PORTA = SEG[n];
+ 258:	82 91       	ld	r24, -Z
+ 25a:	8b bb       	out	0x1b, r24	; 27
+							PORTB = 0b11111011;
+ 25c:	48 bb       	out	0x18, r20	; 24
+ 25e:	5f e3       	ldi	r21, 0x3F	; 63
+ 260:	82 e4       	ldi	r24, 0x42	; 66
+ 262:	9f e0       	ldi	r25, 0x0F	; 15
+ 264:	51 50       	subi	r21, 0x01	; 1
+ 266:	80 40       	sbci	r24, 0x00	; 0
+ 268:	90 40       	sbci	r25, 0x00	; 0
+ 26a:	e1 f7       	brne	.-8      	; 0x264 <main+0x1ac>
+ 26c:	00 c0       	rjmp	.+0      	; 0x26e <main+0x1b6>
+ 26e:	00 00       	nop
+						PORTB = 0b11111011;
+						_delay_ms(5000);
+						a = n;
+					}
+				}else if(n>2){
+						for(n; n>=2;n--){
+ 270:	e6 17       	cp	r30, r22
+ 272:	f7 07       	cpc	r31, r23
+ 274:	89 f7       	brne	.-30     	; 0x258 <main+0x1a0>
+ 276:	85 2d       	mov	r24, r5
+ 278:	94 2d       	mov	r25, r4
+ 27a:	05 c0       	rjmp	.+10     	; 0x286 <main+0x1ce>
+				PORTB = 0b11111101; 
+				break; 	//	FND S1 표시
+			case 0b10110000 : 				// X6를 누르면
+			
+				if(n<2){
+					for(n;n<=2;n++){
+ 27c:	89 81       	ldd	r24, Y+1	; 0x01
+ 27e:	9a 81       	ldd	r25, Y+2	; 0x02
+ 280:	02 c0       	rjmp	.+4      	; 0x286 <main+0x1ce>
+ 282:	89 81       	ldd	r24, Y+1	; 0x01
+ 284:	9a 81       	ldd	r25, Y+2	; 0x02
+							a = n;
+					}
+						
+				}
+				n=a;
+				PORTA = SEG[n];
+ 286:	fc 01       	movw	r30, r24
+ 288:	e0 50       	subi	r30, 0x00	; 0
+ 28a:	ff 4f       	sbci	r31, 0xFF	; 255
+ 28c:	e0 81       	ld	r30, Z
+ 28e:	eb bb       	out	0x1b, r30	; 27
+				PORTB = 0b11111011; 
+ 290:	48 bb       	out	0x18, r20	; 24
+				break; 	//	FND S2 표시
+ 292:	9a 83       	std	Y+2, r25	; 0x02
+ 294:	89 83       	std	Y+1, r24	; 0x01
+ 296:	43 c0       	rjmp	.+134    	; 0x31e <main+0x266>
+			case 0b01110000 : 				// X7를 누르면
+				if(n<1){
+ 298:	18 16       	cp	r1, r24
+ 29a:	19 06       	cpc	r1, r25
+ 29c:	c4 f0       	brlt	.+48     	; 0x2ce <main+0x216>
+					for(n;n<=1;n++){
+ 29e:	82 30       	cpi	r24, 0x02	; 2
+ 2a0:	91 05       	cpc	r25, r1
+ 2a2:	6c f5       	brge	.+90     	; 0x2fe <main+0x246>
+ 2a4:	fc 01       	movw	r30, r24
+ 2a6:	e0 50       	subi	r30, 0x00	; 0
+ 2a8:	ff 4f       	sbci	r31, 0xFF	; 255
+						PORTA = SEG[n];
+ 2aa:	81 91       	ld	r24, Z+
+ 2ac:	8b bb       	out	0x1b, r24	; 27
+						PORTB = 0b11110111;
+ 2ae:	28 bb       	out	0x18, r18	; 24
+ 2b0:	5f e3       	ldi	r21, 0x3F	; 63
+ 2b2:	82 e4       	ldi	r24, 0x42	; 66
+ 2b4:	9f e0       	ldi	r25, 0x0F	; 15
+ 2b6:	51 50       	subi	r21, 0x01	; 1
+ 2b8:	80 40       	sbci	r24, 0x00	; 0
+ 2ba:	90 40       	sbci	r25, 0x00	; 0
+ 2bc:	e1 f7       	brne	.-8      	; 0x2b6 <main+0x1fe>
+ 2be:	00 c0       	rjmp	.+0      	; 0x2c0 <main+0x208>
+ 2c0:	00 00       	nop
+				PORTA = SEG[n];
+				PORTB = 0b11111011; 
+				break; 	//	FND S2 표시
+			case 0b01110000 : 				// X7를 누르면
+				if(n<1){
+					for(n;n<=1;n++){
+ 2c2:	6e 17       	cp	r22, r30
+ 2c4:	7f 07       	cpc	r23, r31
+ 2c6:	89 f7       	brne	.-30     	; 0x2aa <main+0x1f2>
+ 2c8:	89 2d       	mov	r24, r9
+ 2ca:	98 2d       	mov	r25, r8
+ 2cc:	1d c0       	rjmp	.+58     	; 0x308 <main+0x250>
+						PORTA = SEG[n];
+						PORTB = 0b11110111;
+						_delay_ms(5000);
+						a = n;
+					}
+				}else if(n>1){
+ 2ce:	82 30       	cpi	r24, 0x02	; 2
+ 2d0:	91 05       	cpc	r25, r1
+ 2d2:	c4 f0       	brlt	.+48     	; 0x304 <main+0x24c>
+ 2d4:	fc 01       	movw	r30, r24
+ 2d6:	ef 5f       	subi	r30, 0xFF	; 255
+ 2d8:	fe 4f       	sbci	r31, 0xFE	; 254
+					for(n; n>=1;n--){
+						PORTA = SEG[n];
+ 2da:	82 91       	ld	r24, -Z
+ 2dc:	8b bb       	out	0x1b, r24	; 27
+						PORTB = 0b11110111;
+ 2de:	28 bb       	out	0x18, r18	; 24
+ 2e0:	5f e3       	ldi	r21, 0x3F	; 63
+ 2e2:	82 e4       	ldi	r24, 0x42	; 66
+ 2e4:	9f e0       	ldi	r25, 0x0F	; 15
+ 2e6:	51 50       	subi	r21, 0x01	; 1
+ 2e8:	80 40       	sbci	r24, 0x00	; 0
+ 2ea:	90 40       	sbci	r25, 0x00	; 0
+ 2ec:	e1 f7       	brne	.-8      	; 0x2e6 <main+0x22e>
+ 2ee:	00 c0       	rjmp	.+0      	; 0x2f0 <main+0x238>
+ 2f0:	00 00       	nop
+						PORTB = 0b11110111;
+						_delay_ms(5000);
+						a = n;
+					}
+				}else if(n>1){
+					for(n; n>=1;n--){
+ 2f2:	ae 17       	cp	r26, r30
+ 2f4:	bf 07       	cpc	r27, r31
+ 2f6:	89 f7       	brne	.-30     	; 0x2da <main+0x222>
+ 2f8:	89 2d       	mov	r24, r9
+ 2fa:	98 2d       	mov	r25, r8
+ 2fc:	05 c0       	rjmp	.+10     	; 0x308 <main+0x250>
+				PORTA = SEG[n];
+				PORTB = 0b11111011; 
+				break; 	//	FND S2 표시
+			case 0b01110000 : 				// X7를 누르면
+				if(n<1){
+					for(n;n<=1;n++){
+ 2fe:	89 81       	ldd	r24, Y+1	; 0x01
+ 300:	9a 81       	ldd	r25, Y+2	; 0x02
+ 302:	02 c0       	rjmp	.+4      	; 0x308 <main+0x250>
+ 304:	89 81       	ldd	r24, Y+1	; 0x01
+ 306:	9a 81       	ldd	r25, Y+2	; 0x02
+						a = n;
+					}
+								
+				}
+				n=a;
+				PORTA = SEG[n];
+ 308:	fc 01       	movw	r30, r24
+ 30a:	e0 50       	subi	r30, 0x00	; 0
+ 30c:	ff 4f       	sbci	r31, 0xFF	; 255
+ 30e:	e0 81       	ld	r30, Z
+ 310:	eb bb       	out	0x1b, r30	; 27
+				PORTA = SEG[1];
+ 312:	f5 01       	movw	r30, r10
+ 314:	51 81       	ldd	r21, Z+1	; 0x01
+ 316:	5b bb       	out	0x1b, r21	; 27
+				PORTB = 0b11110111; 
+ 318:	28 bb       	out	0x18, r18	; 24
+				break; 	//	FND S3 표시
+ 31a:	9a 83       	std	Y+2, r25	; 0x02
+ 31c:	89 83       	std	Y+1, r24	; 0x01
+ 31e:	ff e3       	ldi	r31, 0x3F	; 63
+ 320:	5d e0       	ldi	r21, 0x0D	; 13
+ 322:	e3 e0       	ldi	r30, 0x03	; 3
+ 324:	f1 50       	subi	r31, 0x01	; 1
+ 326:	50 40       	sbci	r21, 0x00	; 0
+ 328:	e0 40       	sbci	r30, 0x00	; 0
+ 32a:	e1 f7       	brne	.-8      	; 0x324 <main+0x26c>
+ 32c:	00 c0       	rjmp	.+0      	; 0x32e <main+0x276>
+ 32e:	00 00       	nop
+			default : break;
+		}
+		_delay_ms(1000);
+		if(n >= 16) n = 0;
+ 330:	80 31       	cpi	r24, 0x10	; 16
+ 332:	91 05       	cpc	r25, r1
+ 334:	0c f4       	brge	.+2      	; 0x338 <main+0x280>
+ 336:	f9 ce       	rjmp	.-526    	; 0x12a <main+0x72>
+ 338:	8c 2d       	mov	r24, r12
+ 33a:	9d 2d       	mov	r25, r13
+ 33c:	f6 ce       	rjmp	.-532    	; 0x12a <main+0x72>
+
+0000033e <_exit>:
+ 33e:	f8 94       	cli
+
+00000340 <__stop_program>:
+ 340:	ff cf       	rjmp	.-2      	; 0x340 <__stop_program>
